@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Sailec Light';
+    font-style: normal;
+    src: url('/fonts/sailec_light-webfont.woff') format('woff'),
+        url('/fonts/sailec_light-webfont.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Sailec Medium';
+    font-style: normal;
+    src: url('/fonts/sailec_medium-webfont.woff') format('woff'),
+        url('/fonts/sailec_medium-webfont.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Sailec Bold';
+    font-style: normal;
+    src: url('/fonts/sailec_bold-webfont.woff') format('woff'),
+        url('/fonts/sailec_bold-webfont.woff2') format('woff2');
+}
+
+body {
+    background-color: #83c5be;
+}
