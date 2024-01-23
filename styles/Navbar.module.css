@@ -1,0 +1,27 @@
+.mainLinks * {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Sailec Bold';
+    font-size: 1rem;
+    position: relative;
+    margin-right: 1rem;
+    padding-bottom: 3px;
+}
+
+.mainLinks *::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: #000;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+.mainLinks *:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
