@@ -20,7 +20,7 @@ export default function HamburgerNavigation () {
     }
 
     return (
-    <Grid container>
+    <Grid container justifyContent="space-between">
         <Link href="/">
             <Grid item xs={12}>
                 <img src='/Anthonys.png' style={{ width: '170px' }}></img>
@@ -33,7 +33,7 @@ export default function HamburgerNavigation () {
             </button>
         </Grid>
 
-        <Grid item xs={3} justifyContent="space-between" className={`${styles.mainLinks} ${navOn}`}>
+        <Grid container flexDirection='column' alignItems="flex-end" className={`${styles.mainLinks} ${navOn}`}>
             <Link underline="hover" href="#">blog</Link>
             <Link underline="hover" href="#">recipes</Link>
             <Link underline="hover" href="#">contact</Link>

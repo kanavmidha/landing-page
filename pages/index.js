@@ -15,14 +15,14 @@ export default function Home() {
   const [isDesktop, setDesktop] = useState(false)
 
   useEffect(()=>{
-    if (window.innerWidth > 750) {
+    if (window.innerWidth > 840) {
       setDesktop(true)
     } else {
       setDesktop(false)
     }
 
     const showNav = () => {
-      if (window.innerWidth > 750) {
+      if (window.innerWidth > 840) {
         setDesktop(true)
       } else {
         setDesktop(false)
@@ -63,27 +63,26 @@ export default function Home() {
           {/* <img style={{filter: 'drop-shadow(2rem 4.5rem 3rem #000)'}} src="/salad-bowl.png"></img> */}
         </Box>
         <Grid container direction={'row'} sx={{position: 'relative'}}>
-          <Grid item xs={5}>
+          <Grid item xs={12}>
             <Typography 
-              align="left" 
+              align="center" 
               variant="h2"
               sx={{marginTop: '10rem'}}
             >We put the fun in</Typography>
             <Typography 
-              align="left" 
+              align="center" 
               variant="h2"
               sx={{ color: '#e29578'}}
             >Fondue</Typography>
             <Typography 
               variant="body1"
-              align="left"
-              sx={{maxWidth: '80%', margin: '1rem 0'}}
+              align="center"
             >
               Not just your regular blogging site. participate in exciting food quizzes and get a chance to win a food hamper Anthony!
             </Typography>
             <Button 
               variant="contained" 
-              sx={{backgroundColor: '#e29578 !important', fontFamily: 'Sailec Bold', textTransform: 'none', display: 'block', marginRight: 'auto', fontSize: '1rem'}}  
+              sx={{backgroundColor: '#e29578 !important', fontFamily: 'Sailec Bold', textTransform: 'none', display: 'block', fontSize: '1rem'}}  
             >Win Exciting Gifts</Button>
           </Grid>
           
@@ -92,7 +91,7 @@ export default function Home() {
         </Grid>
         <Grid container position='relative' justifyContent='space-between' sx={{marginBottom: '20rem'}}>
           {/* <Box><img style={{maxWidth: '32rem', borderRadius:'50%', boxShadow: '0 1rem 2.5rem rgba(0,0,0,0.8)'}} src="/paneer-dish.png"></img></Box> */}
-          <Grid item xs={5} sx={{marginTop: '7rem', color: '#fff'}}>
+          <Grid item xs={12} sx={{marginTop: '7rem', color: '#fff'}}>
             <Typography
               variant="h2"
               align="right"
@@ -114,7 +113,7 @@ export default function Home() {
           {/* <Box><img style={{position: 'absolute', top: '0', left: '0', zIndex: '-1'}} src="/bg2.png"></img></Box> */}
         </Grid>
         <Grid container justifyContent={'space-between'}>
-          <Grid item xs={5}>
+          <Grid item xs={12}>
             <Typography 
               variant="h3" 
               align="left"
