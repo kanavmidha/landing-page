@@ -46,7 +46,7 @@
 
 .mainLinks {
     position: absolute;
-    top: 5rem;
+    top: 4rem;
     right: 1.5rem;
     z-index: 5;
     visibility: hidden;
@@ -61,8 +61,35 @@
     margin-bottom: 1rem;
     font-size: 1.5rem;
     position: relative;
-    transform: translateY(-20px);
     transition: transform 0.3s ease;
+}
+
+.mainLinks a:nth-child(1) {
+    transform: translateY(-20px);
+}
+
+.mainLinks a:nth-child(2) {
+    transform: translateY(-40px);
+}
+
+.mainLinks a:nth-child(3) {
+    transform: translateY(-60px);
+}
+
+.mainLinks a:nth-child(4) {
+    transform: translateY(-80px);
+}
+
+.mainLinks a:nth-child(5) {
+    transform: translateY(-100px);
+}
+
+.mainLinks a:nth-child(6) {
+    transform: translateY(-120px);
+}
+
+.mainLinks a:nth-child(7) {
+    transform: translateY(-140px);
 }
 
 .mainLinks *::after{
@@ -89,8 +116,10 @@
     overflow: visible;
 }
 
-.navOn * {
+.mainLinks.navOn a {
     transform: translateY(0);
 }
 
 /* for the gradual ease in of menu items, i need to adjust the translateY property for every individual item. */
+
+/* for smooth transition, i have to apply the animation for it to go back smoothly too */
