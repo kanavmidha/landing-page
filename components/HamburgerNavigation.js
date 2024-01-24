@@ -33,7 +33,7 @@ export default function HamburgerNavigation () {
             </button>
         </Grid>
 
-        <Grid container flexDirection='column' alignItems="flex-end" className={`${styles.mainLinks} ${navOn}`}>
+        <Grid container flexDirection='column' flexWrap={'nowrap'} alignItems="flex-end" className={`${styles.mainLinks} ${navOn}`}>
             <Link underline="hover" href="#">blog</Link>
             <Link underline="hover" href="#">recipes</Link>
             <Link underline="hover" href="#">contact</Link>
