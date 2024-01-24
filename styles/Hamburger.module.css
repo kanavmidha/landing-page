@@ -49,9 +49,10 @@
     top: 4rem;
     right: 1.5rem;
     z-index: 5;
-    visibility: hidden;
+    /* visibility: hidden; */
     height: 0;
     overflow: hidden;
+    transition: height 0.2s ease;
 }
 
 .mainLinks * {
@@ -111,7 +112,7 @@
 }
 
 .navOn {
-    visibility: visible;
+    /* visibility: visible; */
     height: 100%;
     overflow: visible;
 }
@@ -123,3 +124,5 @@
 /* for the gradual ease in of menu items, i need to adjust the translateY property for every individual item. */
 
 /* for smooth transition, i have to apply the animation for it to go back smoothly too */
+
+/* the transiton property on height of the mainLinks container solved the issue */
