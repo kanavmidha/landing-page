@@ -7,27 +7,27 @@ const themeOptions = {
                 'Sailec Bold',
                 'sans-serif'
             ].join(','),
-            fontSize: '4rem'
+            fontSize: '2.986rem'
         },
         h2:{
             fontFamily:[
                 'Sailec Bold',
                 'sans-serif'
             ].join(','),
-            fontSize: '4rem'
+            fontSize: '2.488rem'
         },
         h3:{
             fontFamily: [
                 'Sailec Bold'
             ].join(','),
-            fontSize: '3.125rem'
+            fontSize: '2.074rem'
         },
         body1: {
             fontFamily:[
                 'Sailec Medium',
                 'sans-serif'
             ].join(','),
-            fontSize: '1.325rem'
+            fontSize: '1rem'
         }
     },
     palette: {

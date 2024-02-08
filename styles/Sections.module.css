@@ -1,0 +1,100 @@
+.white {
+    color: #fff;
+}
+
+.black {
+    color: black;
+}
+
+.mt1 {
+    margin-top: 1rem;
+}
+
+.mt2 {
+    margin-top: 2rem;
+}
+
+.mt3 {
+    margin-top: 3rem;
+}
+
+.mt4 {
+    margin-top: 4rem;
+}
+
+.mt5 {
+    margin-top: 5rem;
+}
+
+.mt6 {
+    margin-top: 6rem;
+}
+
+.mt7 {
+    margin-top: 7rem;
+}
+
+.bg1 {
+    background: url('/bg1mobile.webp') top/cover no-repeat;
+}
+
+.bg2 {
+    background: url('/public/bg-2-mobile.webp') center/cover no-repeat;
+}
+
+.bg4 {
+    background: url('/public/bg-4-mobile.webp') center/cover no-repeat;
+}
+
+.fontSmall {
+    text-transform: none;
+}
+
+.f600 {
+    font-weight: 600;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.topLeft {
+    top: 0;
+    left: 0;
+}
+
+.buttonCenter {
+    margin: 0 auto;
+    display: block;
+}
+
+.section2Heading::after{
+    content: 'Fondue';
+    display: block;
+    color: #e29578;
+    text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+    .bg1 {
+        background: url('/public/bg1.webp') center/cover no-repeat;
+    }
+
+    .bg2 {
+        background: url('/public/bg2.webp') center/cover no-repeat;
+    }
+
+    .bg3 {
+        background: url('/public/bg3.webp') center/cover no-repeat;
+    }
+
+    .bg4 {
+        background: url('/public/bg4.webp') center/cover no-repeat;
+    }
+
+    
+}

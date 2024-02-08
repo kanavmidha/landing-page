@@ -2,6 +2,7 @@ import styles from '@/styles/Hamburger.module.css'
 import Grid from '@mui/material/Grid'
 import Link from 'next/link'
 import { useState } from 'react'
+import { StyleRegistry } from 'styled-jsx'
 
 export default function HamburgerNavigation () {
 
@@ -20,7 +21,7 @@ export default function HamburgerNavigation () {
     }
 
     return (
-    <Grid container justifyContent="space-between">
+    <Grid container justifyContent="space-between" className={styles.p1}>
         <Link href="/">
             <Grid item xs={12}>
                 <img src='/Anthonys.png' style={{ width: '170px' }}></img>
